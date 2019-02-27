@@ -6,7 +6,7 @@ async function main () {
 
   console.log('converting image...')
 
-  const buffer = await io.convertToBuffer(
+  const buffer = await io.compressAndSaveToBuffer(
     'https://d3hrdje48va8xr.cloudfront.net/stage/products/1551161989445_mqyxg4IpWLguvGw2.jpeg'
   )
 

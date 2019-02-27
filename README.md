@@ -1,26 +1,26 @@
-# image-optim
+# image-optim-upload
 Unofficial package to handle the upload and compress image by using ImageOptim compression service. It takes an **uploaded** image URL, converts it, and returns to converted buffer. This package is able to write the returned buffer to file or return the buffer as it is. For further detail, visit ImageOptim [API documentation](https://imageoptim.com/api).
 
 ## Instalation
 
 ```
-npm install --save image-optim
+npm install --save image-optim-upload
 ```
 
 ## Usage
 
 ```
-const ImageOptim = require('image-optim')
-const io = new ImageOptiom([USERNAME])
+const ImageOptim = require('image-optim-upload')
+const io = new ImageOptim([USERNAME])
 
 // using async-await
-const filePath = await io.convertToFile(
+const filePath = await io.compressAndWriteFile(
   [FILENAME],
   [IMAGE URL],
   [OPTION OBJECT]
 )
 
-const convertedBuffer = await io.converToBuffer(
+const convertedBuffer = await io.compressAndSaveToBuffer(
   [IMAGE URL],
   [OPTION OBJECT]
 )
