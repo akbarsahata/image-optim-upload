@@ -27,4 +27,3 @@ const convertedBuffer = await io.converToBuffer(
 ```
 
 For more details on option, please check ImageOptiom [API documentation](https://imageoptim.com/api).
-## 
