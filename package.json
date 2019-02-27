@@ -1,0 +1,25 @@
+{
+  "name": "image-optim",
+  "version": "1.0.0",
+  "description": "unofficial module to upload and compress image by using ImageOptim compression service",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": ["nodejs", "image-compression"],
+  "author": "akbarsahata",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "joi": "^14.3.1",
+    "superagent": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
