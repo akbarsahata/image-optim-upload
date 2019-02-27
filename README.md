@@ -4,7 +4,7 @@ Unofficial package to handle the upload and compress image by using ImageOptim c
 ## Instalation
 
 ```
-npm install image-optim
+npm install --save image-optim
 ```
 
 ## Usage
@@ -27,3 +27,13 @@ const convertedBuffer = await io.converToBuffer(
 ```
 
 For more details on option, please check ImageOptiom [API documentation](https://imageoptim.com/api).
+
+## Results
+
+### Before
+https://d3hrdje48va8xr.cloudfront.net/stage/products/1551161989445_mqyxg4IpWLguvGw2.jpeg (~5.5MB)
+![](https://d3hrdje48va8xr.cloudfront.net/stage/products/1551161989445_mqyxg4IpWLguvGw2.jpeg)
+
+### After
+./compress-class-1.jpeg (~2.8MB)
+![](compress-class-1.jpeg)
