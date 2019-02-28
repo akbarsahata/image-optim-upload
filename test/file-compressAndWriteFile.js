@@ -1,14 +1,19 @@
-const ImageOptim = require('../lib')
+require('dotenv').config()
+
+const ImageOptimUpload = require('../index.js')
 const start = Date.now()
+const {
+  USERNAME
+} = process.env
 
 async function main () {
-  const io = new ImageOptim('cdzgzlvkrk')
+  const io = new ImageOptimUpload(USERNAME)
 
   console.log('converting image...')
 
   const path = await io.compressAndWriteFile(
-    'compress-class-1.jpeg',
-    'https://d3hrdje48va8xr.cloudfront.net/stage/products/1551161989445_mqyxg4IpWLguvGw2.jpeg'
+    'compress-class-file.jpeg',
+    './test/uncompressed.jpeg'
   )
 
   console.log('converted to', path)

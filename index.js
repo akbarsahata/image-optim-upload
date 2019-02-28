@@ -1,1 +1,4 @@
-module.exports = require('./lib')
+
+const ImageOptimUpload = require('./lib/ImageOptim')
+
+module.exports = ImageOptimUpload
