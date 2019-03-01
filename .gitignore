@@ -1,3 +1,4 @@
 node_modules
 .env
 *.jpeg
+test/S3.json
