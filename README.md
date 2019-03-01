@@ -46,7 +46,7 @@ For more details on options, please check ImageOptiom [API documentation](https:
 
 To instantiate the module, use `new` and it will result and object. The only parameter it needs is _username_ and it's required, otherwise instantiation will throw error.
 
-```
+```javascript
 const ImageOptimUpload = require('image-optim-upload')
 const iou = new ImageOptimUpload('username')
 ```
